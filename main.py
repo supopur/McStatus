@@ -93,6 +93,5 @@ if __name__ == "__main__":
     log('Starting the autoclean thread...', 'debug')
     x.start()
     log('Getting the token from token.env file...', 'debug')
-    
-    print(token.token)
-    client.run(token)
+    #print(token.token)
+    client.run(token.token)
