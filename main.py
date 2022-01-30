@@ -5,7 +5,7 @@ import colorama
 from colored import fg
 import threading
 from time import sleep
-from os import environ
+import token
 
 #set up the logger
 logging.basicConfig(filename='main.log', encoding='utf-8', level=logging.DEBUG)
@@ -93,5 +93,6 @@ if __name__ == "__main__":
     log('Starting the autoclean thread...', 'debug')
     x.start()
     log('Getting the token from token.env file...', 'debug')
-    token = environ.get('TOKEN')
+    
+    print(token.token)
     client.run(token)
