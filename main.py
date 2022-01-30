@@ -91,4 +91,4 @@ if __name__ == "__main__":
     x = threading.Thread(target=autoclean)
     log('Starting the autoclean thread...', 'debug')
     x.start()
-    client.run('OTA5NzYwNDcxMzc1MTU5MzA2.YZI-dg.Mj9qzJ6mrqUm6deU3YVqjHN0v0M')
+    client.run('TOKEN')
