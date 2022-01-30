@@ -5,7 +5,7 @@ import colorama
 from colored import fg
 import threading
 from time import sleep
-import token
+import secrets
 
 #set up the logger
 logging.basicConfig(filename='main.log', encoding='utf-8', level=logging.DEBUG)
@@ -93,5 +93,5 @@ if __name__ == "__main__":
     log('Starting the autoclean thread...', 'debug')
     x.start()
     log('Getting the token from token.env file...', 'debug')
-    #print(token.token)
-    client.run(token.token)
+    #print(secrets.token)
+    client.run(secrets.token)

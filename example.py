@@ -1,2 +1,2 @@
-#rename this file to token.py
+#rename this file to secrets.py
 token = 'YOUR TOKEN'
